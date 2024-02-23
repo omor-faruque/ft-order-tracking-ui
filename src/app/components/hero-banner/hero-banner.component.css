@@ -1,19 +1,18 @@
 .home-hero {
     height: 100vh;
-    align-items: center;
     padding-left: 10%;
     color: var(--white);
-
+    padding-top: 20%;
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("/assets/images/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.tracking-no-input {
+.tracking-input {
     width: 50%;
     padding: 15px;
     background-color: transparent;
@@ -22,20 +21,38 @@
     margin-right: 12px;
     margin-bottom: 24px;
 }
+
 .track-btn {
     width: 25%;
     cursor: pointer;
 }
-input:focus {
-    outline: none; 
+
+.error-status,
+.delivery-status {
+    width: fit-content;
 }
+
+/* .error-status {
+    background-color: black;
+}
+.delivery-status {
+    background-color: white;
+    color: black;
+} */
+
+input:focus {
+    outline: none;
+}
+
 @media (max-width: 690px) {
     .home-hero {
-        height: 50vh;
+        height: 60vh;
     }
 
-    .tracking-no-input, .track-btn {
+    .tracking-input,
+    .track-btn {
         width: 80%;
+        padding: 12px;
     }
 
 
