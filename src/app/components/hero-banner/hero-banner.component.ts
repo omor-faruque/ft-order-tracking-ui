@@ -18,7 +18,7 @@ export class HeroBannerComponent {
   }
 
   trackOrder() {
-    this.errorStatus = "";
+    this.resetStatusMessage();
     if (this.trackingId.trim().length==0) {
       this.errorStatus = "Please Enter a Tracking ID";
       return;
@@ -27,18 +27,17 @@ export class HeroBannerComponent {
     this.orderService.getDeliveryStatus(this.trackingId).subscribe(
       (response) => {
         this.deliveryStatus = response;
-        this.clearTrackingId();
       },
       (error) => {
         this.errorStatus = "Invalid Tracking ID";
-        this.clearTrackingId();
       }
     )
 
   }
 
-  private clearTrackingId(){
-    this.trackingId = "";
+  private resetStatusMessage(){
+    this.deliveryStatus = {};
+    this.errorStatus = "";
   }
 
 }

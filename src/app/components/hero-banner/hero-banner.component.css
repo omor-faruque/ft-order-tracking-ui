@@ -6,13 +6,13 @@
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("/assets/images/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.tracking-no-input {
+.tracking-input {
     width: 50%;
     padding: 15px;
     background-color: transparent;
@@ -29,17 +29,16 @@
 
 .error-status,
 .delivery-status {
-    font-weight: bold;
-    padding: 8px 16px;
     width: fit-content;
 }
 
-.error-status {
-    background-color: #e32020;
+/* .error-status {
+    background-color: black;
 }
 .delivery-status {
-    background-color: green;
-}
+    background-color: white;
+    color: black;
+} */
 
 input:focus {
     outline: none;
@@ -47,12 +46,13 @@ input:focus {
 
 @media (max-width: 690px) {
     .home-hero {
-        height: 50vh;
+        height: 60vh;
     }
 
-    .tracking-no-input,
+    .tracking-input,
     .track-btn {
         width: 80%;
+        padding: 12px;
     }
 
 

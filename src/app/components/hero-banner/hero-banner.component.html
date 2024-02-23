@@ -4,12 +4,15 @@
         <p>Track your items using tracking numbers.</p>
 
         <div class="mt-24">
-            <input class="tracking-no-input" type="text" [(ngModel)]="trackingId">
-            <button class="track-btn" (click)="trackOrder()">Track</button>
+            <input class="mt-24 tracking-input" type="text" [(ngModel)]="trackingId">
+            
         </div>
+        <button class="track-btn" (click)="trackOrder()">Track</button>
+       
 
         <div *ngIf="deliveryStatus.displayName" class="mt-16 delivery-status">
             <p>STATUS: {{deliveryStatus.displayName}}</p>
+            <p>Note: {{deliveryStatus.note}}</p>
         </div>
 
         <div *ngIf="errorStatus" class="mt-16 error-status">
