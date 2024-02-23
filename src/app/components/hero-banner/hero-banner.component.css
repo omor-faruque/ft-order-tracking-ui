@@ -30,15 +30,9 @@
 .error-status,
 .delivery-status {
     width: fit-content;
+    font-size: .9rem;
 }
 
-/* .error-status {
-    background-color: black;
-}
-.delivery-status {
-    background-color: white;
-    color: black;
-} */
 
 input:focus {
     outline: none;
