@@ -11,8 +11,7 @@
        
 
         <div *ngIf="deliveryStatus.displayName" class="mt-16 delivery-status">
-            <p>STATUS: {{deliveryStatus.displayName}}</p>
-            <p>Note: {{deliveryStatus.note}}</p>
+            <p>Your order is {{deliveryStatus.displayName}}</p>
         </div>
 
         <div *ngIf="errorStatus" class="mt-16 error-status">
