@@ -1,20 +1,19 @@
-
 <div class="row home-hero hero-image ">
     <div class="container mb-16 w-100">
-        <h1 class="mb-16">Track</h1>
+        <h1 class="mb-16 mt-24">Track</h1>
         <p>Track your items using tracking numbers.</p>
 
         <div class="mt-24">
-            <input class="tracking-no-input" type="text">
-            
+            <input class="tracking-no-input" type="text" [(ngModel)]="trackingId">
+            <button class="track-btn" (click)="trackOrder()">Track</button>
+        </div>
 
-            <button class="track-btn">Track</button>
+        <div *ngIf="deliveryStatus.displayName" class="mt-16 delivery-status">
+            <p>STATUS: {{deliveryStatus.displayName}}</p>
+        </div>
+
+        <div *ngIf="errorStatus" class="mt-16 error-status">
+            <p>{{errorStatus}}</p>
         </div>
     </div>
-
-
-
-
-
-
 </div>

@@ -1,9 +1,8 @@
 .home-hero {
     height: 100vh;
-    align-items: center;
     padding-left: 10%;
     color: var(--white);
-
+    padding-top: 20%;
 }
 
 .hero-image {
@@ -22,19 +21,37 @@
     margin-right: 12px;
     margin-bottom: 24px;
 }
+
 .track-btn {
     width: 25%;
     cursor: pointer;
 }
-input:focus {
-    outline: none; 
+
+.error-status,
+.delivery-status {
+    font-weight: bold;
+    padding: 8px 16px;
+    width: fit-content;
 }
+
+.error-status {
+    background-color: #e32020;
+}
+.delivery-status {
+    background-color: green;
+}
+
+input:focus {
+    outline: none;
+}
+
 @media (max-width: 690px) {
     .home-hero {
         height: 50vh;
     }
 
-    .tracking-no-input, .track-btn {
+    .tracking-no-input,
+    .track-btn {
         width: 80%;
     }
 
