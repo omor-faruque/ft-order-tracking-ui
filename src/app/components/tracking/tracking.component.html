@@ -1,0 +1,17 @@
+<h1 class="mb-16 mt-24">Track</h1>
+<p>Track your items using tracking numbers.</p>
+
+<div class="mt-24">
+    <input class="mt-24 tracking-input" type="text" [(ngModel)]="trackingId">
+    
+</div>
+<button class="track-btn" (click)="trackOrder()">Track</button>
+
+
+<div *ngIf="deliveryStatus.displayName" class="mt-16 delivery-status">
+    <p>Your order is {{deliveryStatus.displayName}}</p>
+</div>
+
+<div *ngIf="errorStatus" class="mt-16 error-status">
+    <p>{{errorStatus}}</p>
+</div>

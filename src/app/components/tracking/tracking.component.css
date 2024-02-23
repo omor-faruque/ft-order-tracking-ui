@@ -1,0 +1,36 @@
+
+.tracking-input {
+    width: 50%;
+    padding: 15px;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    margin-right: 12px;
+    margin-bottom: 24px;
+}
+
+.track-btn {
+    width: 25%;
+    cursor: pointer;
+}
+
+.error-status,
+.delivery-status {
+    width: fit-content;
+    font-size: .9rem;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+@media (max-width: 690px) {
+    .tracking-input,
+    .track-btn {
+        width: 80%;
+        padding: 12px;
+    }
+
+
+}
