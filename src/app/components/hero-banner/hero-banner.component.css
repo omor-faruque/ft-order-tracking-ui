@@ -2,11 +2,12 @@
     height: 100vh;
     align-items: center;
     padding-left: 10%;
+    color: var(--white);
 
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/assets/images/hero-3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("/assets/images/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,15 +15,28 @@
 
 .tracking-no-input {
     width: 50%;
-    padding: 12px;
+    padding: 15px;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    margin-right: 12px;
+    margin-bottom: 24px;
 }
-
+.track-btn {
+    width: 25%;
+    cursor: pointer;
+}
+input:focus {
+    outline: none; 
+}
 @media (max-width: 690px) {
     .home-hero {
         height: 50vh;
     }
 
-    .tracking-no-input {
+    .tracking-no-input, .track-btn {
         width: 80%;
     }
+
+
 }
