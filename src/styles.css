@@ -333,3 +333,7 @@ button {
     border: 1px solid var(--black);
     width: 100%;
 }
+
+input:focus {
+    outline: none;
+}
