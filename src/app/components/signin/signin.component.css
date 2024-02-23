@@ -1,0 +1,43 @@
+.signin-box {
+    margin: 94px 0;
+}
+
+.left-panel,
+.right-panel {
+    flex: 0 0 34.5%;
+    max-width: 34.5%;
+    border: 2px solid black;
+    padding: 24px;
+}
+
+
+input {
+    padding: 12px;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+    margin-bottom: 16px;
+    width: 100%;
+   
+}
+
+button {
+    margin-top: 16px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+@media (max-width: 690px) {
+    input {
+        padding: 12px;
+    }
+
+    .left-panel {
+        display: none;
+    }
+
+    .right-panel {
+        flex: 0 0 94.5%;
+         max-width: 94.5%;
+    }
+}
