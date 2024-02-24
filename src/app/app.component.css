@@ -1,9 +1,0 @@
-.pt-fixed {
-    padding-top: 95px;
-}
-
-@media (max-width: 690px) {
-    .pt-fixed {
-        padding-top: 73px;
-    }
-}

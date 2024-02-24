@@ -12,6 +12,7 @@ import { HeroBannerComponent } from './components/hero-banner/hero-banner.compon
 import { TrackingComponent } from './components/tracking/tracking.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { SigninComponent } from './components/signin/signin.component';
+import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SigninComponent } from './components/signin/signin.component';
     HeroBannerComponent,
     TrackingComponent,
     AdminComponent,
-    SigninComponent
+    SigninComponent,
+    AdminHeaderComponent
   ],
   imports: [
     BrowserModule,
