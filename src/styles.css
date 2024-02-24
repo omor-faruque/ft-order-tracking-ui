@@ -36,7 +36,6 @@ body {
 
 
 @media (max-width: 690px) {
-
     html,
     body {
         font-size: 14px;
@@ -110,9 +109,6 @@ a {
         max-width: 33.3333333333%;
     }
 }
-
-
-
 
 /*---------- UTILITY CSS ----------*/
 
