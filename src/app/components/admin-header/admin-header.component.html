@@ -1,0 +1,35 @@
+<!-- header -->
+<header class="w-100 bb">
+    <div class="container row justify-content-space-between p-16">
+      <div class="left-menu">
+        <div class="container row align-items-center pl-12">
+          <a routerLink="/"><img class="marketplace"  width="100" src="assets/images/logo.png" alt="marketplace"></a>
+        </div>
+      </div>
+      <div class="right-menu">
+        <div class="desktop-menu row align-items-center justify-content-right pr-12">
+          <a class="pl-24">About</a>
+        </div>
+  
+        <div class="mobile-menu">
+          <div class="row justify-content-right header__main-ham-menu-cont pr-16" (click)="mobileMenuOpenClicked=!mobileMenuOpenClicked">
+              <img src="assets/images/ham-menu.svg" alt="hamburger menu" *ngIf="!mobileMenuOpenClicked"
+                  class="header__main-ham-menu">
+              <img src="assets/images/ham-menu-close.svg" alt="hamburger menu close" *ngIf="mobileMenuOpenClicked"
+                  class="header__main-ham-menu-close">
+          </div>
+      </div>
+  
+  
+      </div>
+  
+  
+    </div>
+    <div *ngIf="mobileMenuOpenClicked" class="position-relative w-100">
+      <div class="ham-menu-content col-12 w-100">
+        <a href="#" class="bt" target="_blank">Sign In</a>
+        <a href="#" target="_blank">Sign up</a>
+      </div>
+    </div>
+  
+  </header>

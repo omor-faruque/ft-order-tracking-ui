@@ -1,10 +1,9 @@
-
 :root {
     --white: #fff;
     --grey: #f9f9f9;
     --black: #000;
     --green: #00ff1d;
-    --primary:#253746;
+    --primary: #253746;
 }
 
 * {
@@ -43,6 +42,7 @@ body {
         font-size: 14px;
     }
 }
+
 @media (max-width: 350px) {
 
     html,
@@ -87,6 +87,7 @@ a {
         flex: 0 0 33%;
         max-width: 33%;
     }
+
     .col-sm-6 {
         flex: 0 0 48.5%;
         max-width: 48.5%;
@@ -103,6 +104,7 @@ a {
         flex: 0 0 23.5%;
         max-width: 23.5%;
     }
+
     .col-md-4 {
         flex: 0 0 33.3333333333%;
         max-width: 33.3333333333%;
@@ -117,6 +119,7 @@ a {
 .fw-600 {
     font-weight: 600;
 }
+
 .justify-content-center {
     justify-content: center;
 }
@@ -185,6 +188,7 @@ a {
 .p-36 {
     padding: 36px;
 }
+
 .pt-24 {
     padding-top: 24px;
 }
@@ -192,6 +196,7 @@ a {
 .pb-16 {
     padding-bottom: 16px;
 }
+
 .pb-24 {
     padding-bottom: 24px;
 }
@@ -245,12 +250,15 @@ a {
 .mt-16 {
     margin-top: 16px;
 }
+
 .mt-24 {
     margin-top: 24px;
 }
+
 .mt-36 {
     margin-top: 36px;
 }
+
 .mt-84 {
     margin-top: 84px;
 }
@@ -258,24 +266,31 @@ a {
 .mb-16 {
     margin-bottom: 16px;
 }
+
 .mb-24 {
     margin-bottom: 24px;
 }
+
 .mb-36 {
     margin-bottom: 36px;
 }
+
 .mb-84 {
     margin-bottom: 84px;
 }
+
 .ml-12 {
     margin-left: 12px;
 }
+
 .ml-16 {
     margin-left: 16px;
 }
+
 .ml-24 {
     margin-left: 24px;
 }
+
 .ml-32 {
     margin-left: 32px;
 }
@@ -287,6 +302,7 @@ a {
 .bb {
     border-bottom: 1px solid var(--primary);
 }
+
 .bt {
     border-top: 1px solid var(--primary);
 }
@@ -294,6 +310,7 @@ a {
 .bb-2 {
     border-bottom: 2px solid var(--black);
 }
+
 .bt-2 {
     border-top: 2px solid var(--black);
 }
@@ -337,4 +354,14 @@ button {
 
 input:focus {
     outline: none;
+}
+
+.pt-fixed {
+    padding-top: 95px;
+}
+
+@media (max-width: 690px) {
+    .pt-fixed {
+        padding-top: 73px;
+    }
 }
