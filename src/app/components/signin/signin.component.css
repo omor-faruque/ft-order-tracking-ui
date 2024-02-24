@@ -1,15 +1,25 @@
+
 .signin-box {
-    margin: 94px 0;
+    height: 60vh;
+    margin-top: 68px;
+    margin-bottom: 68px;
 }
 
 .left-panel,
 .right-panel {
-    flex: 0 0 34.5%;
-    max-width: 34.5%;
-    border: 2px solid black;
-    padding: 24px;
+    flex: 0 0 44.5%;
+    max-width: 44.5%;
+    border: 1px solid black;
+    padding: 24px 48px;
 }
 
+.left-panel{
+    background-image: url("/assets/images/bg-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 
 input {
     padding: 12px;
@@ -31,13 +41,14 @@ button {
     input {
         padding: 12px;
     }
-
     .left-panel {
         display: none;
     }
-
     .right-panel {
         flex: 0 0 94.5%;
          max-width: 94.5%;
     }
 }
+
+
+

@@ -1,5 +1,5 @@
 .home-hero {
-    height: 100vh;
+    height: calc(100vh - 95px);
     padding-left: 10%;
     color: var(--white);
     padding-top: 10%;
@@ -15,5 +15,6 @@
     .home-hero {
         height: 60vh;
         padding-top: 15%;
+        height: calc(100vh - 73px);
     }
 }
