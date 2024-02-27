@@ -361,3 +361,11 @@ input:focus {
         padding-top: 73px;
     }
 }
+
+.small-text {
+    font-size: 0.8rem;
+}
+
+.error-color {
+    color: red;
+}
