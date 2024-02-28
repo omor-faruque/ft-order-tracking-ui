@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -11,8 +12,12 @@ export class SigninComponent {
   password: string = "";
   displayErrorMessage: boolean = false;
   errorMessage:string = "";
+  user:any = {
+    username:'',
+    email:''
+  }
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   signin() {
 
@@ -24,7 +29,16 @@ export class SigninComponent {
     this.displayErrorMessage = false;
 
     this.authService.authenticate(this.email.trim(), this.password.trim()).subscribe((res: any) => {
-      console.log(res);
+      this.authService.storeToken(res.token);
+      this.user.username = res.username;
+      this.user.email = res.email;
+
+      console.log("** USER DETAILS **");
+      
+      console.log(this.user);
+
+      this.router.navigate(['/admin/orders'])
+      
       
     },
       (error: Error) => {
