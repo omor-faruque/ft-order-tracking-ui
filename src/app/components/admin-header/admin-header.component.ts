@@ -15,6 +15,6 @@ export class AdminHeaderComponent {
   signOut() {
     this.menuOpenClicked = false;
     this.authService.signOut();
-    this.router.navigate(["/admin/signin"])
+    this.router.navigate(["/admin/signin"]);
   }
 }

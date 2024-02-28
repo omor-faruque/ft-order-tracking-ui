@@ -27,11 +27,7 @@ export class OrderService {
 
 
   getOrders() {
-    if (this.token) {
-      return this.http.get<any>(this.config.hostName, { headers: this.headers });
-    } else {
-      return null;
-    }
+    return this.http.get<any>(this.config.hostName+ this.config.orders, { headers: this.headers });
   }
 
   getDeliveryStatus(trackingId: string): Observable<any> {
