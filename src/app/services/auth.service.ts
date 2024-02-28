@@ -7,7 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private authUrl = 'http://localhost:8080/api/auth/signin';
+  private authUrl = {
+    hostName: 'http://localhost:8080',
+    signin: '/api/auth/signin',
+    signout: '/api/auth/signout'
+  };
 
   headers: HttpHeaders = new HttpHeaders({
     'Content-Type': 'application/json' // Set the Content-Type header to JSON
@@ -20,7 +24,7 @@ export class AuthService {
       email: email,
       password: password
     };
-    return this.http.post<any>(this.authUrl, body, { headers: this.headers });
+    return this.http.post<any>(this.authUrl.hostName+this.authUrl.signin, body, { headers: this.headers });
   }
 
   storeToken(token: string): void {
@@ -54,9 +58,16 @@ export class AuthService {
     return true; // If token time is not found, consider it expired
   }
 
-  signOut(): void {
+  signOut() {
+
+    const header = new HttpHeaders({
+      Authorization: `Bearer ${localStorage.getItem('jwtToken')}`
+    })
     localStorage.removeItem('jwtToken'); // Remove the JWT token from local storage
     localStorage.removeItem('tokenTime'); // Remove the token time from local storage
+
+    return this.http.post<any>(this.authUrl.hostName+this.authUrl.signout, null, { headers: header });
+
   }
 
 }

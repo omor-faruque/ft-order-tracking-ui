@@ -1,1 +1,8 @@
-<p>order-list works!</p>
+<div class="container p-16 pl-36" *ngIf="orders.length>0">
+
+    <div class="row mb-24" *ngFor="let order of orders">
+        <span class="mr-12">{{order.sourceOrderId}}</span>
+        <span class="mr-12">{{order.customerName}}</span>
+        <span class="mr-12">{{order.orderStatus}}</span>
+    </div>
+</div>
