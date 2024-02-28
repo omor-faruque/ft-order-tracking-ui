@@ -13,6 +13,7 @@ import { TrackingComponent } from './components/tracking/tracking.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
+import { OrderListComponent } from './components/order-list/order-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AdminHeaderComponent } from './components/admin-header/admin-header.com
     TrackingComponent,
     AdminComponent,
     SigninComponent,
-    AdminHeaderComponent
+    AdminHeaderComponent,
+    OrderListComponent
   ],
   imports: [
     BrowserModule,
