@@ -340,6 +340,9 @@ a {
 a {
     cursor: pointer;
 }
+.cursor-pointer {
+    cursor: pointer;
+}
 
 button {
     padding: 16px;
